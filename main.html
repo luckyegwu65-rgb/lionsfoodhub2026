@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Remix Icon CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet"/>
+    
+    <link rel="stylesheet" href="style.css">
+    <title>Lions FoodHub · Store</title>
+</head>
+<body>
+    <nav>
+        <div class="nav__header">
+            <div class="logo nav__logo">
+                <a href="#">Lions <span>FoodHub</span></a>
+            </div>
+            <div class="navmenubtn" id="menu-btn">
+                <span><i class="ri-menu-line"></i></span>
+            </div>
+        </div>
+        <ul class="nav__links" id="nav-links">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#special">SPECIAL</a></li>
+            <li><a href="#">CHEF</a></li>
+            <li><a href="#">CLIENT</a></li>
+            <li><a href="#footer">CONTACT US</a></li>
+        </ul>
+        <div class="nav__btn" id="cart-btn-wrapper">
+            <button id="cart-icon"><i class="ri-shopping-bag-fill"></i></button>
+            <span class="cart-count" id="cart-count">0</span>
+        </div>
+    </nav>
+
+    <!-- Header / Hero -->
+    <section class="sectioncontainer headercontainer" id="home">
+        <div class="header__image">
+            <img src="img/header.jpg" alt="header image">
+        </div>
+        <div class="header__content">
+            <h1>Meet, Eat, & Enjoy The <span>True Taste</span></h1>
+            <p class="section__description">
+                Quality you can trust, taste you can savor. Experience the essence of good food with us. Let's Indulge in a symphony of flavors that will tantalize your taste buds and leave you craving for more. 
+                Join us on a food journey where every bite is a celebration of freshness, quality, and unforgettable taste.
+            </p>
+            <div class="header__btn">
+                <button class="btn">Get Started</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Dishes -->
+    <section class="sectioncontainer specialcontainer" id="special">
+        <h2 class="section__header">Our Special Dishes</h2>
+        <p class="section__description">Each dish promises an unforgettable dining experience with fresh ingredients and expertly crafted flavors.</p>
+
+        <div class="special__grid">
+            <!-- card 1 -->
+            <div class="special__card" data-id="1" data-name="Jollof Rice and Chicken" data-price="2000" data-image="img/special1.jpg">
+                <img src="img/special1.jpg" alt="special1">
+                <h4>Jollof Rice and Chicken</h4>
+                <p>Our signature Smoky Party Jollof, hearth-fired aroma. Served with your choice of protein and sweet fried plantains.</p>
+                <div class="special__ratings">
+                    <span><i class="ri-star-fill"></i></span><span><i class="ri-star-fill"></i></span><span><i class="ri-star-fill"></i></span><span><i class="ri-star-fill"></i></span><span><i class="ri-star-fill"></i></span>
+                </div>
+                <div class="special__footer">
+                    <p class="price">&#8358;2000</p>
+                    <button class="btn add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <!-- card 2 -->
+            <div class="special__card" data-id="2" data-name="Rice and Stew" data-price="2200" data-image="img/special6.jpg">
+                <img src="img/special6.jpg" alt="Rice and Stew">
+                <h4>Rice and Stew</h4>
+                <p>Fragrant white rice paired with garden-fresh tomato sauce. Garnished with herbs and grilled protein.</p>
+                <div class="special__ratings">
+                    <span><i class="ri-star-fill"></i></span><span><i class="ri-star-fill"></i></span><span><i class="ri-star-fill"></i></span><span><i class="ri-star-fill"></i></span><span><i class="ri-star-fill"></i></span>
+
+                    </div>
+                <div class="special__footer">
+                    <p class="price">&#8358;2200</p>
+                    <button class="btn add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <!-- card 3 -->
+            <div class="special__card" data-id="3" data-name="Egusi Soup and Fufu" data-price="2500" data-image="img/special2.jpg">
+                <img src="img/special2.jpg" alt="Egusi Soup">
+                <h4>Egusi Soup and Fufu</h4>
+                <p>Infused with traditional spices, fresh bitter leaf. A hearty texture, soulful pairing for your favorite swallow.</p>
+                <div class="special__ratings">
+                    <span><i class="ri-star-fill"></i></span><span><i class="ri-star-fill"></i></span><span><i class="ri-star-fill"></i></span><span><i class="ri-star-fill"></i></span><span><i class="ri-star-fill"></i></span>
+                </div>
+                <div class="special__footer">
+                    <p class="price">&#8358;2500</p>
+                    <button class="btn add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <!-- card 4 -->
+            <div class="special__card" data-id="4" data-name="Amala and Ewedu" data-price="2500" data-image="img/amala.png">
+                <img src="img/amala.png" alt="Amala and Ewedu">
+                <h4>Amala and Ewedu</h4>
+                <p>Soft Amala, vibrant Ewedu & Gbegiri, with assorted 'Obstacles' (shaki, beef, cow skin). Bold and unforgettable.</p>
+                <div class="special__ratings">
+                    <span><i class="ri-star-fill"></i></span><span><i class="ri-star-fill"></i></span><span><i class="ri-star-fill"></i></span><span><i class="ri-star-fill"></i></span><span><i class="ri-star-fill"></i></span>
+                </div>
+                <div class="special__footer">
+                    <p class="price">&#8358;2500</p>
+                    <button class="btn add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <!-- card 5 -->
+            <div class="special__card" data-id="5" data-name="Abacha and Ugba" data-price="2500" data-image="img/SPECIAL4.jpg">
+                <img src="img/SPECIAL4.jpg" alt="Abacha and Ugba">
+                <h4>Abacha and Ugba</h4>
+                <p>African salad with crayfish, peppers, crispy fish, stockfish & kpomo. Naturally gluten-free & refreshing.</p>
+                <div class="special__ratings">
+                    <span><i class="ri-star-fill"></i></span><span><i class="ri-star-fill"></i></span><span><i class="ri-star-fill"></i></span><span><i class="ri-star-fill"></i></span><span><i class="ri-star-fill"></i></span>
+                </div>
+                <div class="special__footer">
+                    <p class="price">&#8358;2500</p>
+                    <button class="btn add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <!-- card 6 -->
+            <div class="special__card" data-id="6" data-name="Banga Stew with Rice" data-price="2500" data-image="img/special5.jpg">
+                <img src="img/special5.jpg" alt="Banga Stew">
+                <h4>Banga Stew with Rice</h4>
+                <p>Velvety palm kernel stew, seasoned with indigenous spices and Cameroon pepper. Liquid gold from Niger Delta.</p>
+                <div class="special__ratings">
+                    <span><i class="ri-star-fill"></i></span><span><i class="ri-star-fill"></i></span><span><i class="ri-star-fill"></i></span><span><i class="ri-star-fill"></i></span><span><i class="ri-star-fill"></i></span>
+                </div>
+                <div class="special__footer">
+                    <p class="price">&#8358;2500</p>
+                    <button class="btn add-to-cart">Add to Cart</button>
+
+                    </div>
+            </div>
+            <!-- card 7 -->
+            <div class="special__card" data-id="7" data-name="Pepper Soup (Cow Leg)" data-price="3500" data-image="img/pepper soup.jpg">
+                <img src="img/pepper soup.jpg" alt="Pepper Soup">
+                <h4>Pepper Soup</h4>
+                <p>Tender cow leg slow-cooked in spicy broth with ehuru, uziza. Collagen-rich, hearty & flavorful.</p>
+                <div class="special__ratings">
+                    <span><i class="ri-star-fill"></i></span><span><i class="ri-star-fill"></i></span><span><i class="ri-star-fill"></i></span><span><i class="ri-star-fill"></i></span><span><i class="ri-star-fill"></i></span>
+                </div>
+                <div class="special__footer">
+                    <p class="price">&#8358;3500</p>
+                    <button class="btn add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Explore -->
+    <section class="sectioncontainer explorecontainer">
+        <div class="explore__image">
+            <img src="img/explore.jpg" alt="Explore">
+        </div>
+        <div class="explore__content">
+            <h2 class="section__header">We Serve Healthy and Tasty Food</h2>
+            <p class="section__description">
+                Ready for a flavor explosion? Dive into our menu and discover your new favorite. 
+                Whether you are a Jollof loyalist or a Pepper Soup adventurer, there is a bold new taste waiting for you here.
+            </p>
+            <div class="explore__btn">
+                <button class="btn">Explore Story <span><i class="ri-arrow-right-line"></i></span></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- CART OVERLAY & PANEL -->
+    <div class="cart-overlay" id="cart-overlay"></div>
+    <div class="cart-panel" id="cart-panel">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <button class="close-cart" id="close-cart"><i class="ri-close-line"></i></button>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <!-- dynamic items -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total</span>
+                <span id="cart-total-amount">&#8358;0</span>
+            </div>
+            <button class="checkout-btn" id="checkout-btn">Checkout</button>
+        </div>
+    </div>
+
+
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <i class="fas fa-newspaper"></i>
+                
+                <h3>Lions FoodHub Nsukka</h3>
+            </div>
+            <p>Delivering delicious, healthy meals to LIONS AND LIONESSES since 2026.</p>
+            <p>Email: Lionsfoodhub2026@gmail.com | Phone: (234) 09068400446</p>
+            <div class="social-links">
+                <a href="#" class="social-link">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="#" class="social-link">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="social-link">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="#" class="social-link">
+                    <i class="fas fa-rss"></i>
+                </a>
+            </div>
+            <p class="copyright">
+                &copy; 2026 lion's foodhub Nsukka. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+
+
+<!-- n8n chat witget -->
+
+    <button id="chat-widget-button">💬</button>
+
+    <div id="chat-widget-container">
+        <div id="chat-widget-header">
+            <span>Chat</span>
+            <button id="close-chat">✖</button>
+        </div>
+        <div id="chat-widget-body">
+            <p style="margin-bottom: 20px;"><strong>Hi 👋, how can we help?</strong></p>
+        </div>
+        <div id="chat-widget-footer">
+            <input type="text" id="chat-widget-input" placeholder="Type your message here...">
+            <button id="chat-widget-send">Send</button>
+        </div>
+    </div>
+
+
+
+     <script>
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const navLinks = document.getElementById('nav-links');
+
+        menuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('open');
+        });
+
+        
+     </script>
+
+    <script src="script.js"></script>
+</body>
+</html>
